@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="library.css">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="babel.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="wrapper" id="landingpage">
+      <div class="wrapper" id="landingtitle">Welcome to the Library of Babel</div>
+      <div class="wrapper" id="landingtext">
+        Contained within the walls of this library designed by Jorge Luis Borges
+        is every possible 410 page book containing every possible combination of
+        3200 letter pages. Within these pages is every novel ever written, and every
+        novel that has yet to be. Every song, every scientific discovery known
+        and unknown, every name of every person who will ever live. <br><br>
+        All inside this archive
+        .<br><br>
+        The collection is divided into hexagonal rooms. Each room has four walls,
+        each wall has five shelves, each shelf has 32 books, and each book has 411
+        pages. Every page can be accessed at any time provided you know it's address.
+        Feel free to browse at your discretion, or should you so choose you
+        may even search for specific passages within the texts. Should you require help
+        simply search for "help", and if you want to know more about the workings of
+        this portal, search for "technical documentation". Enjoy your stay.
+        </nav>
+      </div>
+      <div class="wrapper"><button type="button" class="custom-btn btn-9" id="move">Click Here to Enter</button></div>
+    </div>
+    <div class="wrapper" id="searchtools">
+      <div class="wrapper" id="hexinput">:Hex: <input size="44" id="hex" value="1"></input></div>
+      <br>
+      <div class="wrapper" id="pageselect">
+        :Wall: <select class="select" id="wall" class="wall"></select>
+        :Shelf: <select class="select" id="shelf" class="wall"></select>
+        :Volume: <select class="select" id="volume" class="wall"></select>
+        :Page: <select class="select" id="page" class="wall"></select>:
+      </div>
+      <br>
+      <br>
+      <div class="wrapper"><button type="button" class="custom-btn btn-9" id="read">Read</button></div>
+      <hr class="texthr">
+      <div class="wrapper">
+        <div id="textborder">
+          <span class="search1"></span>
+          <span class="search2"></span>
+          <textarea rows="6" cols="35" id='search_str'></textarea>
+        </div>
+      </div>
+      <hr class="texthr2">
+      <div class="wrapper"><button type="button" class="custom-btn btn-9" id="search">Search</button></div>
+      <hr class="bothr">
+    </div>
+    <div id="pagetext">
+      <span id="volumeTitle"></span><br>
+      <div style="text-align: center;" id='searchresult'>
+
+      </div>
+    </div>
+
+  <!-- for livereload extension -->
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+  </body>
+</html>

@@ -1,0 +1,334 @@
+@font-face {
+  font-family: 'Ubuntu Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Mono'), local('UbuntuMono-Regular'), url(http://fonts.gstatic.com/s/ubuntumono/v7/ViZhet7Ak-LRXZMXzuAfkY4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+body {
+  font-family: 'Ubuntu Mono';
+  font-weight: 400;
+  background: #fdfdf7;
+}
+
+div.center {
+  width: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.select {
+  border: 2px solid black;
+  background: #f2f2f2;
+  outline:none;
+  height: 28px;
+}
+
+#landingpage {
+  position: absolute;
+  background: white;
+  z-index:2;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  transition: all 1s ease-in-out;
+  background: #fdfdf7;
+}
+
+#landingtitle {
+  position: absolute;
+  top: 30%;
+  width: 420px;
+  font-size: 20pt;
+  font-weight: 700;
+  border-bottom: 2px solid black;
+}
+
+#landingtext {
+  position: absolute;
+  top: 34%;
+  width: 700px;
+  font-size: 13pt;
+  font-weight: 400;
+  text-align: center;
+}
+
+#move {
+  position: absolute;
+  font-family: 'Ubuntu Mono';
+  font-weight: 700;
+  top: 61%;
+}
+
+#searchtools {
+  width: 450px;
+  height: 400px;
+  position: absolute;
+  margin-top: -200px;
+  margin-left: -225px;
+  top: 50%;
+  left: 50%;
+  transition: all 1s ease-in-out;
+}
+
+
+
+#hexinput {
+  position: absolute;
+  background: white;
+  width: 380px;
+  height: 24px;
+  margin-left: -190px;
+  margin-bottom: 100px;
+  top:-1%;
+  left:50%;
+  border: 2px solid black;
+  transition: all 0.3s ease;
+}
+
+#hexinput:before, #hexinput:after {
+  position: absolute;
+  content: ' ';
+  z-index: -1;
+  width: 30%;
+  top: 50%;
+  height: 2px;
+  background: #000;
+  transition: all 0.3s ease;
+}
+#hexinput:before {left: -5%;}
+#hexinput:after {right: -5%}
+#hexinput:hover:before {left: -15%;}
+#hexinput:hover:after {right: -15%;}
+#hexinput:hover {
+  background: #000;
+  color: #fff;
+}
+
+#hex {
+  height:22px;
+  border: 2px solid black;
+  border-right: none;
+  padding-left: 5px;
+}
+
+#pageselect {
+  position: absolute;
+  background: white;
+  width: 380px;
+  height: 24px;
+  margin-left: -190px;
+  margin-bottom: 100px;
+  top: 8%;
+  left:50%;
+  border: 2px solid black;
+  transition: all 0.3s ease;
+}
+
+#pageselect:before, #pageselect:after {
+  position: absolute;
+  content: ' ';
+  z-index: -1;
+  width: 30%;
+  top: 50%;
+  height: 2px;
+  background: #000;
+  transition: all 0.3s ease;
+}
+#pageselect:before {left: -5%;}
+#pageselect:after {right: -5%}
+#pageselect:hover:before {left: -15%;}
+#pageselect:hover:after {right: -15%;}
+#pageselect:hover {
+  background: #000;
+  color: #fff;
+}
+
+#read {
+  position: absolute;
+  top: 17%;
+  left: 50%;
+  margin-left: -9.5%;
+  font-family: 'Ubuntu Mono';
+  font-size: 12pt;
+}
+
+.texthr{
+  position: absolute;
+  border: 0;
+  border-top: 2px solid black;
+  top: 25%;
+  width:50%;
+  height:3px;
+}
+
+#textborder {
+  position:absolute;
+  margin-left: 0%;
+  top: 30%;
+}
+
+#textborder:before, #textborder:after {
+  position: absolute;
+  content: ' ';
+  z-index: -1;
+  width: 30%;
+  top: 45%;
+  height: 2px;
+  background: #000;
+  transition: all 0.3s ease;
+}
+#textborder:before {left: -15%;}
+#textborder:after {right: -15%}
+#textborder:hover:before {left: -25%;}
+#textborder:hover:after {right: -25%;}
+#search_str:hover {background: #f0f0f0;}
+
+.texthr2{
+  position: absolute;
+  border: 0;
+  border-top: 2px solid black;
+  top: 56%;
+  width:50%;
+  height:3px;
+}
+
+#search {
+  position: absolute;
+  top: 61%;
+  left: 50%;
+  margin-left: -51px;
+  font-family: 'Ubuntu Mono';
+  font-size: 12pt;
+}
+
+/*** for some reason not having this breaks the rest. I dunno. ***/
+.tophr{
+  border: 0;
+  border-top: 2px solid black;
+  t
+  width:50%;
+  height:3px;
+  top:-50%;
+}
+
+.bothr{
+  position: absolute;
+  border: 0;
+  border-top: 2px solid black;
+  width:12%;
+  height:3px;
+  top: 69%;
+}
+
+.bothr2{
+  border: 0;
+  border-top: 2px solid black;
+  width:5%;
+  height:3px;
+}
+
+#pagetext {
+  z-index: -1;
+  width: 580px;
+  height: 630px;
+  position: absolute;
+  margin-top: 0px;
+  margin-left: -290px;
+  opacity: 0;
+  top: 33%;
+  left: 50%;
+  transition: all 1s ease-in-out;
+}
+
+#searchresult {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  height: 599px;
+  overflow: hidden;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  white-space: normal;
+  word-break: break-all;
+  text-align: left;
+  font-family: monospace;
+  font-size: 10pt;
+}
+
+#volumeTitle {
+  width: 580px;
+  position: absolute;
+  text-align: center;
+  padding-bottom: 4px;
+
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#hex {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  overflow: hidden;
+  box-shadow: none;
+  outline: none;
+}
+
+#search_str {
+  overflow:hidden;
+  resize: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  border: solid black 2px;
+  box-shadow: none;
+  overflow: auto;
+  outline: none;
+  transition: all 0.3s ease;
+  background: #f5f5f5;
+}
+
+
+
+/**** fancy buttons ****/
+.custom-btn {
+  padding: 5px 25px;
+  font-family: 'Ubuntu Mono'
+  font-weight: 700;
+  background: transparent;
+  outline: none !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+.btn-9 {
+  background: #f2f2f2;
+  border: 2px solid #000;
+  transition: all 0.3s ease;
+}
+.btn-9:before, .btn-9:after {
+  position: absolute;
+  content: ' ';
+  z-index: -1;
+  width: 60%;
+  top: 50%;
+  height: 2px;
+  background: #000;
+  transition: all 0.3s ease;
+}
+.btn-9:before {left: -20%;}
+.btn-9:after {right: -20%}
+.btn-9:hover {
+  background: #000;
+  color: #fff;
+}
+.btn-9:hover:before {left: -50%;}
+.btn-9:hover:after {right: -50%;}
